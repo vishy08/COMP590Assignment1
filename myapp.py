@@ -23,7 +23,7 @@ def get_steps():
 
 def get_sleep():
     myheader = {"Authorization" : "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMzhRUTkiLCJzdWIiOiJCNEYzNVEiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJyc29jIHJzZXQgcm94eSBycHJvIHJudXQgcnNsZSByYWN0IHJyZXMgcmxvYyByd2VpIHJociBydGVtIiwiZXhwIjoxNjYxMzUwODMzLCJpYXQiOjE2NjA3NDYwMzN9.-6KKpR38nXavOTwsBrJBKuMQD3thwGeFDguLTMiOPM0"}
-    myurl = "https://api.fitbit.com/1.2/user/-/sleep/date/2020-01-01.json"
+    myurl = "https://api.fitbit.com/1.2/user/-/sleep/date/2022-08-17.json"
     resp = requests.get(myurl, headers=myheader).json()
     sleep = resp["summary"]["totalMinutesAsleep"]
     print("you slept for " + str(sleep) + " minutes last night.")
